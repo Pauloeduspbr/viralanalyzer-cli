@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "viralanalyzer": {
+      "command": "viral",
+      "args": ["mcp", "serve"],
+      "env": {}
+    }
+  }
+}

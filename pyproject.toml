@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viral-analyzer-cli"
+version = "0.1.0"
+description = "CLI for ViralAnalyzer competitive intelligence platform"
+requires-python = ">=3.10"
+license = {text = "Proprietary"}
+authors = [{name = "ViralAnalyzer Team"}]
+
+dependencies = [
+    "typer[all]>=0.12.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.5.0",
+    "rich>=13.7.0",
+    "textual>=0.70.0",
+]
+
+[project.optional-dependencies]
+web = [
+    "textual-serve>=1.1.0",
+]
+dev = [
+    "pytest>=8.0",
+    "respx>=0.21",
+    "coverage>=7.4",
+    "textual-serve>=1.1.0",
+]
+
+[project.scripts]
+viral = "viral_cli.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
