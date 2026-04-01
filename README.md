@@ -120,7 +120,21 @@ viral mcp serve --transport sse          # SSE (HTTP, for network access)
 viral mcp inspect                        # List all 14 tools
 ```
 
-**Claude Desktop config** (`claude_desktop_config.json`):
+#### Supported IDEs & AI Assistants
+
+| Tool | Transport | Setup |
+|------|-----------|-------|
+| **Claude Desktop** | stdio | Add to `claude_desktop_config.json` |
+| **VS Code (Copilot)** | stdio | MCP extension + config |
+| **Cursor** | stdio | Add to `.cursor/mcp.json` |
+| **Windsurf** | stdio | Add to MCP settings |
+| **JetBrains (IntelliJ, PyCharm)** | stdio | MCP plugin + config |
+| **Cline** | stdio | Add to MCP settings |
+| **Any MCP Client** | SSE | `viral mcp serve --transport sse --port 3100` |
+
+#### Claude Desktop / Claude Code
+
+Add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
@@ -130,6 +144,56 @@ viral mcp inspect                        # List all 14 tools
     }
   }
 }
+```
+
+#### VS Code (GitHub Copilot)
+
+Add to `.vscode/mcp.json`:
+```json
+{
+  "servers": {
+    "viralanalyzer": {
+      "command": "viral",
+      "args": ["mcp", "serve"]
+    }
+  }
+}
+```
+
+#### Cursor
+
+Add to `.cursor/mcp.json`:
+```json
+{
+  "mcpServers": {
+    "viralanalyzer": {
+      "command": "viral",
+      "args": ["mcp", "serve"]
+    }
+  }
+}
+```
+
+#### JetBrains IDEs (IntelliJ, PyCharm, WebStorm)
+
+Install the MCP plugin, then add to settings:
+```json
+{
+  "mcpServers": {
+    "viralanalyzer": {
+      "command": "viral",
+      "args": ["mcp", "serve"]
+    }
+  }
+}
+```
+
+#### SSE Mode (Any HTTP Client)
+
+For network access or custom integrations:
+```bash
+viral mcp serve --transport sse --port 3100
+# Connect to: http://localhost:3100/sse
 ```
 
 ## Output Formats
