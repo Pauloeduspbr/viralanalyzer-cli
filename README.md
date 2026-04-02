@@ -1,10 +1,20 @@
-# ViralAnalyzer CLI
+<p align="center">
+  <img src="logo.png" alt="ViralAnalyzer" width="120" />
+</p>
 
-**Competitive intelligence from your terminal.** Analyze viral content, track trends, monitor competitors, and generate AI-powered content ideas across 25+ platforms.
+<h1 align="center">ViralAnalyzer CLI</h1>
 
-[![PyPI](https://img.shields.io/pypi/v/viralanalyzer-cli)](https://pypi.org/project/viralanalyzer-cli/)
-[![Python](https://img.shields.io/pypi/pyversions/viralanalyzer-cli)](https://pypi.org/project/viralanalyzer-cli/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+<p align="center">
+  <strong>Competitive intelligence from your terminal.</strong><br>
+  Analyze viral content, track trends, monitor competitors, and generate AI-powered content ideas across 25+ platforms.
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/viralanalyzer-cli/"><img src="https://img.shields.io/pypi/v/viralanalyzer-cli" alt="PyPI" /></a>
+  <a href="https://pypi.org/project/viralanalyzer-cli/"><img src="https://img.shields.io/pypi/pyversions/viralanalyzer-cli" alt="Python" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
+  <a href="https://pypi.org/project/viralanalyzer-cli/"><img src="https://img.shields.io/pypi/dm/viralanalyzer-cli" alt="Downloads" /></a>
+</p>
 
 ## Install
 
