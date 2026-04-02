@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability, please report it responsibly:
 
-- **Email**: security@viralanalyzer.com.br
+- **Email**: contato@viralanalyzer.com.br
 - **Do NOT** open a public issue for security vulnerabilities
 
 We will respond within 48 hours and provide a fix timeline.
